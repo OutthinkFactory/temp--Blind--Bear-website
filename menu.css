@@ -21,6 +21,7 @@ html {
   }
   li {
     font-size: 2rem;
+    padding-right: 2em;
   }
   
   a {
