@@ -134,6 +134,9 @@ html {
     padding-bottom: 10rem;
   
 }
+.know h3{
+    padding-bottom: 3rem;
+}
 .open{
     background-color: #B43434;
     color:white;
