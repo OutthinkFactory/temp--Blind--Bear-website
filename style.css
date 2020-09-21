@@ -151,6 +151,10 @@ html {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
+.open h3{
+    font-family: 'Permanent Marker', cursive;
+    padding-bottom: 2rem;
+}
 
 .features h2{
     color: white;
