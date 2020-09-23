@@ -31,7 +31,9 @@ html {
   }
 
   
-
+main{
+  background-color: black;
+}
   
   .nav-container {
     background: #070707;
