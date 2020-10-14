@@ -30,7 +30,14 @@ html {
     text-decoration: none;
   }
 
-  
+  /*.sticky {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+   align-items: center;
+ 
+  }*/
+
 main{
   background-color: black;
 }
@@ -197,6 +204,10 @@ main{
   @media screen and (max-width: 1200px) {
     html {
       font-size: 50%;
+    }
+    .sticky {
+      position: sticky;
+   
     }
     nav #logo {
       -webkit-box-flex: 1;

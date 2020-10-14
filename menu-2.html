@@ -34,40 +34,90 @@
         </nav>
       </div>
   <main>
+   <div class="sticky"> 
     <div class="btn-container">
-      <a href="#breakfast" class="btn">Breakfast </a>
-      <a href="#brunch" class="btn">Brunch</a>
-      <a href="#lunch" class="btn">Lunch </a>
-      <a href="#dinner" class="btn">Dinner </a>
-      <a href="#latenight" class="btn">Late NIght </a>
+      <a href="#breakfast" class="btn">Breakfast<br>M-f 7am-11am </a>
       <a href="#bar" class="btn">Giggle Water</a>
+     
+      <a href="#lunch" class="btn">Lunch <br>M-f 11am-3pm</a>
+      <a href="#brunch" class="btn">Brunch</a>
+      <a href="#dinner" class="btn">Dinner <br>3pm-10pm </a>
+      <a href="#latenight" class="btn">Hibernation <br> 10pm- close </a>
+     
     </div>
     <div class="menu">
         <div class="menuContainer">
           <div id="bar">
-            <img src="resources\images\bar2menu.jpg" width="100%">
-          </div>
+            <picture>
+              <source media="(min-width: 800px)" srcset="resources\images\bar2menu.jpg">
+              <source media="(min-width: 350px)" srcset="resources\images\bar2menu-xmall.jpg">
+              <img src="resources\images\bar2menu.jpg" srcset="resources\images\bar2menu.jpg" alt="bar menu" width="100%">
+            </picture>
+           
+          <!--</div>
             <div id="breakfast">
-              <img src="resources\breakfast-small.jpg" width="100%">
-            </div>
-            <div id="brunch">
+            
+              <img src="resources\images\breakfast-small.jpg" width="100%">
+            </div>-->
+
+                <div id="breakfast">
+            <picture>
+              <source media="(min-width: 800px)" srcset="resources\images\breakfast-small.jpg">
+              <source media="(min-width: 350px)" srcset="resources\images\breakfast-small.jpg">
+              <img src="resources\images\breakfast-small.jpg" srcset="resources\images\breakfast-small.jpg" alt="bar menu" width="100%">
+            </picture>
+       
+
+           <!-- <div id="brunch">
               <img src="resources\images\brunch-small.jpg" width="100%">
             </div>
-           
-            <div id="lunch">
+          -->
+          <div id="brunch">
+            <picture>
+              <source media="(min-width: 800px)" srcset="resources\images\brunch-small.jpg">
+              <source media="(min-width: 350px)" srcset="resources\images\brunch-small.jpg">
+              <img src="resources\images\brunch-small.jpg" srcset="resources\images\brunch-small.jpg" alt="bar menu" width="100%">
+            </picture>
+          
+           <!-- <div id="lunch">
               <img src="resources\images\lunch-small.jpg" width="100%">
             </div>
+          -->
+          <div id="lunch">
+            <picture>
+              <source media="(min-width: 800px)" srcset="resources\images\lunch-lrg.jpg">
+              <source media="(min-width: 350px)" srcset="resources\images\lunch-med.jpg">
+              <img src="resources\images\lunch-lrg.jpg" srcset="resources\images\lunch-lrg.jpg" alt="bar menu" width="100%">
+            </picture>
+          <!--
             <div id="dinner">
               <img src="resources\images\dinner-small.jpg"width="100%">
             </div>
+
+          -->
+          <div id="dinner">
+            <picture>
+              <source media="(min-width: 800px)" srcset="resources\images\Dinner-Menu-LRG.jpg">
+              <source media="(min-width: 350px)" srcset="resources\images\Dinner-Menu-men.jpg">
+              <img src="resources\images\Dinner-Menu-men.jpg" srcset="resources\images\Dinner-Menu-men.jpg" alt="bar menu" width="100%">
+            </picture>
+          <!--
             <div id="latenight">
               <img src="resources\images\late-night-lrg.jpg"width="100%">
             </div>
+          -->
+          <div id="latenight">
+            <picture>
+              <source media="(min-width: 800px)" srcset="resources\images\hibernation-menu.jpg">
+              <source media="(min-width: 350px)" srcset="resources\images\hib-med.jpg">
+              <img src="resources\images\hibernation-menu.jpg" srcset="resources\images\hibernation-menu.jpg" alt="bar menu" width="100%">
+            </picture>
+
         </div>
 
     </div>
   
-  
+  </div>
   
 </section>
 <footer>
@@ -83,6 +133,7 @@
       <a href="https://www.instagram.com/blindbear901"><img src="./resources/images/instagram-logo.png" alt="" /></a>
     </li>
   </ul>.
+  
 </footer>
   </main>
 </body>
