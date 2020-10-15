@@ -164,7 +164,8 @@ main{
 
     .menuContainer img{
         width: 100%;
-        padding-top: 1em;}
+        padding-top: 1em;
+      }
 
     footer {
             min-height: 10vh;
