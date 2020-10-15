@@ -136,7 +136,10 @@ main{
     box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
     position: relative;
     width: 35%;
+    height: 150px;
+    
 }
+
 .btn:hover, .btn:focus {
     opacity: 0.8;
 }
@@ -150,7 +153,8 @@ main{
 .btn.block {
     display: block !important;
 }
-  
+  .btn-container a{
+    padding-top: 50px;  }
   .menu{
     padding:50px;
     margin: 0 auto;
