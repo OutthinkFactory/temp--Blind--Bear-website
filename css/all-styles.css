@@ -26,7 +26,7 @@ hr { border-width: 1px 0px 0px; border-right-style: initial; border-bottom-style
 .btn:hover { background: rgb(206, 186, 149); border-color: rgb(206, 186, 149); color: rgb(0, 0, 0); transition: all 0.3s linear 0s; }
 .btn-box .btn { margin: 0px 10px; }
 .min-page-height { min-height: 680px; overflow: scroll; }
-.menu-box { padding: 55px 50px; box-sizing: border-box; }
+pad-box { padding: 55px 50px; box-sizing: border-box; }
 .bg-img { top: 0px; left: 0px; background-size: cover; background-position: 50% center; position: absolute; width: 100%; height: 100%; z-index: 0; }
 .overlay { width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; z-index: 1; box-sizing: border-box; }
 .align-top { position: absolute; z-index: 2; width: 100%; top: 0px; left: 0px; box-sizing: border-box; }
@@ -35,9 +35,13 @@ hr { border-width: 1px 0px 0px; border-right-style: initial; border-bottom-style
 .relative { position: relative; }
 .pad-20 { padding: 20px; box-sizing: border-box; }
 .max-width { max-width: 768px; margin: 0px auto; }
+
+
+
+
 .promo-block { color: white; position: relative; overflow: hidden; }
-.promo-block .menu-box { position: relative; z-index: 3; padding: 155px 50px; }
-.promo-block .menu-box + .bg-img::before { content: ""; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
+.promo-block pad-box { position: relative; z-index: 3; padding: 155px 50px; }
+.promo-block pad-box + .bg-img::before { content: ""; position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); }
 .center { display: inline-block; margin: 0px auto; text-align: center; }
 .hero .overlay { color: white; }
 header { position: absolute; top: 0px; left: 0px; right: 0px; box-sizing: border-box; z-index: 5; }
@@ -74,7 +78,7 @@ nav .nav-block.main-links ul li { margin: 0px 0px 20px; }
 nav .nav-block.main-links ul li:last-of-type { margin: 0px; }
 nav .nav-block.main-links ul li a { color: white; text-transform: uppercase; font-family: Montserrat; font-weight: 200; font-size: 30px; line-height: 40px; display: block; letter-spacing: 3px; transition: all 0.45s linear 0s; }
 nav .nav-block.main-links ul li a:hover { color: rgb(205, 188, 157); transition: all 0.25s ease-out 0s; }
-nav .menu-box { max-width: 950px; margin: 0px auto; }
+nav pad-box { max-width: 950px; margin: 0px auto; }
 nav .sister-links img { width: 100%; margin: 0px auto 15px; }
 nav .sister-links h5 { color: rgb(182, 182, 182); font-size: 12px; line-height: 18px; }
 nav .sister-links .col { text-align: center; }
@@ -151,7 +155,7 @@ footer.subpage { background: black; }
 .award-block .icon-ribbon-2, .award-block .icon-ribbon { font-size: 60px; display: inline-block; float: left; margin: -5px 3px 0px 0px; }
 .insta-block a { color: rgb(129, 140, 149); display: inline-block; font-size: 32px; margin: 10px 0px 0px 10px; }
 .insta-block span { display: inline-block; float: left; }
-.hero.chef .menu-box { padding: 30% 100px 55px 20px; }
+.hero.chef pad-box { padding: 30% 100px 55px 20px; }
 .hero.chef .bg-img { width: 50%; }
 .hero.chef .overlay { width: 50%; right: 0px; left: 50%; }
 .hero.chef .chef-img { display: none; }
@@ -161,7 +165,7 @@ footer.subpage { background: black; }
 .promo-block.sisters img { width: 200px; margin: 0px auto 20px; }
 .promo-block.sisters .col.pad-both h3 { margin: 90px 20px 0px; color: rgb(205, 188, 157); font-size: 44px; font-weight: 200; text-align: center; }
 .hero.private-dining p { font-family: Montserrat; font-weight: 200; letter-spacing: 1px; }
-.hero.private-dining .align-middle.menu-box { padding: 125px 100px 0px; width: 60%; box-sizing: border-box; max-width: 880px; }
+.hero.private-dining .align-middlepad-box { padding: 125px 100px 0px; width: 60%; box-sizing: border-box; max-width: 880px; }
 .hero.private-dining p { font-family: Montserrat; font-weight: 200; letter-spacing: 1px; margin: 20px 0px 0px; }
 .private-contact { margin: 60px 0px 0px; }
 .hero.private-dining .private-contact p { font-family: "Roboto Slab"; letter-spacing: 0px; font-size: 14px; line-height: 22px; color: rgb(170, 170, 170); margin: 0px 0px 30px; }
@@ -178,7 +182,7 @@ footer.subpage { background: black; }
 #gallery::before, #gallery::after { content: ""; font-family: Fontello; color: white; position: absolute; z-index: 2; top: 0px; left: 0px; transform: translateY(-72%); font-size: 200px; line-height: 100%; opacity: 0.65; }
 #gallery::after { content: ""; top: initial; bottom: 0px; left: initial; right: 0px; transform: translateY(72%); }
 #gallery { position: relative; }
-#contact.promo-block .menu-box { padding: 200px 50px 115px; }
+#contact.promo-block pad-box { padding: 200px 50px 115px; }
 .giftcards .col { overflow: hidden; min-height: 650px; }
 .giftcards .col::before { content: ""; top: -12px; right: -12px; bottom: -12px; left: -12px; z-index: 2; position: absolute; transition: all 0.35s linear 0s; box-sizing: border-box; }
 .giftcards .col:hover::before { top: 0px; right: 0px; bottom: 0px; left: 0px; transition: all 0.35s linear 0s; }
@@ -227,13 +231,13 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
 [class^="icon-"]::before, [class*=" icon-"]::before { width: auto; height: auto; margin: 0px; line-height: 100%; }
 @media only screen and (max-width: 1500px) {
   .award-block { margin: 60px 0px 0px; }
-  .hero.private-dining .align-middle.menu-box { padding: 125px 80px 0px; }
+  .hero.private-dining .align-middlepad-box { padding: 125px 80px 0px; }
   nav .nav-block { padding: 20px; }
   nav .nav-block.main-links ul li a { font-size: 25px; line-height: 38px; }
   nav .nav-block.main-links ul li { margin: 0px 0px 12px; }
   nav .external-links a { font-size: 18px; margin: 0px 0px 10px; }
   nav .logo { margin: 20px auto 0px; width: 150px; }
-  nav .menu-box { padding: 20px; }
+  nav pad-box { padding: 20px; }
   nav .social { margin: 12px 0px 20px; }
   nav h2, nav h2 a { font-size: 18px; line-height: 24px; }
   nav .newsletter .btn { padding: 3px 26px; font-size: 12px; }
@@ -241,19 +245,19 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   .menu-active .page-wrapper { transform: translateY(620px) scale(0.8); }
 }
 @media only screen and (max-width: 1400px) {
-  .hero.private-dining .align-middle.menu-box { padding: 125px 60px 0px; }
+  .hero.private-dining .align-middlepad-box { padding: 125px 60px 0px; }
 }
 @media only screen and (max-width: 1250px) {
-  .hero.private-dining .align-middle.menu-box { padding: 125px 50px 0px; }
+  .hero.private-dining .align-middlepad-box { padding: 125px 50px 0px; }
   #bio .max-width { margin: 40px auto; }
   #gallery::before, #gallery::after { font-size: 180px; }
 }
 @media only screen and (max-width: 1150px) {
-  .hero.chef .menu-box { padding: 50% 50px 55px 20px; }
+  .hero.chef pad-box { padding: 50% 50px 55px 20px; }
   h1 { font-size: 45px; }
   h3 { font-size: 18px; }
   h4 { font-size: 16px; }
-  .hero.private-dining .align-middle.menu-box { width: 70%; }
+  .hero.private-dining .align-middlepad-box { width: 70%; }
 }
 @media only screen and (max-width: 1050px) {
   .logo { margin: 0px auto 60px; width: 55%; }
@@ -261,10 +265,10 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   .home-footer .pad-right { padding: 0px 30px 0px 0px; }
   .home-footer .pad-both { padding: 0px 15px; }
   .home-footer .pad-left { padding: 0px 0px 0px 30px; }
-  .menu-box { padding: 45px 40px; }
-  .promo-block .menu-box { padding: 120px 40px; }
-  #contact.promo-block .menu-box { padding: 200px 40px 100px; }
-  .hero.private-dining .align-middle.menu-box { padding: 105px 40px 0px; }
+  pad-box { padding: 45px 40px; }
+  .promo-block pad-box { padding: 120px 40px; }
+  #contact.promo-block pad-box { padding: 200px 40px 100px; }
+  .hero.private-dining .align-middlepad-box { padding: 105px 40px 0px; }
   #bio .max-width { margin: 40px auto; }
 }
 @media only screen and (max-width: 1024px) {
@@ -272,10 +276,10 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   .home-footer .pad-both { padding: 0px 10px; }
   .home-footer .pad-left { padding: 0px 0px 0px 20px; }
   .home-footer .hours, .home-footer .contact { padding: 35px 30px; }
-  .menu-box { padding: 35px 30px; }
-  .promo-block .menu-box { padding: 100px 30px; }
-  #contact.promo-block .menu-box { padding: 160px 30px 70px; }
-  .hero.private-dining .align-middle.menu-box { width: 80%; padding: 120px 30px 0px; }
+  pad-box { padding: 35px 30px; }
+  .promo-block pad-box { padding: 100px 30px; }
+  #contact.promo-block pad-box { padding: 160px 30px 70px; }
+  .hero.private-dining .align-middlepad-box { width: 80%; padding: 120px 30px 0px; }
   .gallery-block.full { padding: 0px 0px 56%; }
   #gallery::before, #gallery::after { font-size: 150px; }
   .logo { margin: 0px auto; width: 40%; }
@@ -309,7 +313,7 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   .giftcards .col.half { width: 100%; display: block; float: none; clear: both; min-height: 350px; margin: 0px; height: auto !important; }
   p.larger { font-size: 22px; line-height: 30px; }
   h3 { font-size: 16px; line-height: 24px; }
-  .hero.chef .align-middle.menu-box { background: rgba(0, 0, 0, 0.7); transform: translateY(0%); top: initial; bottom: 0px; padding: 35px 30px; width: auto; }
+  .hero.chef .align-middlepad-box { background: rgba(0, 0, 0, 0.7); transform: translateY(0%); top: initial; bottom: 0px; padding: 35px 30px; width: auto; }
   .hero.chef .bg-img { display: none; }
   .hero.chef { background-image: none; height: auto !important; }
   .hero.chef .chef-img { display: block; height: auto; width: 100%; }
@@ -320,7 +324,7 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   .giftcards .hover .btn { display: none; }
   .giftcards h1 { display: inline; position: relative; }
   .giftcards .hover::before { background-size: 60%; background-position: 100% 100%; }
-  .hero.private-dining .align-middle.menu-box { padding: 130px 30px 20px; }
+  .hero.private-dining .align-middlepad-box { padding: 130px 30px 20px; }
   #gallery::before, #gallery::after { font-size: 130px; }
   .hero.private-dining { min-height: 900px; }
   .private-contact { margin: 30px 0px 0px; }
@@ -329,7 +333,7 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   nav .nav-block.main-links ul li { margin: 0px 0px 12px; }
   nav .external-links a { font-size: 20px; margin: 0px 0px 15px; }
   nav .logo { margin: 20px auto 0px; width: 150px; }
-  nav .menu-box { padding: 20px; }
+  nav pad-box { padding: 20px; }
   .press-list { margin: 0px; }
   .press-list li { padding: 0px; margin: 0px; width: 100%; float: none; display: block; clear: both; }
 }
@@ -346,13 +350,13 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
 }
 @media only screen and (max-width: 650px) {
   .home-footer .hours, .home-footer .contact { padding: 25px 20px; }
-  .menu-box, .hero.chef .align-middle.menu-box { padding: 25px 20px; }
-  #contact.promo-block .menu-box { padding: 100px 20px 50px; }
+  pad-box, .hero.chef .align-middlepad-box { padding: 25px 20px; }
+  #contact.promo-block pad-box { padding: 100px 20px 50px; }
   #bio .max-width { margin: 10px auto; }
-  .hero.private-dining .align-middle.menu-box { width: 100%; padding: 150px 20px 30px; }
+  .hero.private-dining .align-middlepad-box { width: 100%; padding: 150px 20px 30px; }
   footer.subpage .col.third.pad-left, footer.subpage .col.third.pad-both { width: 100%; padding: 0px; float: none; clear: both; display: block; text-align: center; }
   footer.subpage .col.third.pad-both { margin: 30px 0px 40px; }
-  .promo-block .menu-box { padding: 70px 20px; }
+  .promo-block pad-box { padding: 70px 20px; }
   .promo-block.sisters .col { display: block; float: none; padding: 0px; }
   .promo-block.sisters .col.pad-both h3 { margin: 40px 0px; }
   .gallery-block { padding: 0px 0px 200%; }
@@ -385,8 +389,8 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   header .btn { font-size: 12px; padding: 5px 21px; top: 22px; left: 20px; }
   .menus { padding: 200px 0px 0px; }
   .hero.private-dining { min-height: 780px; }
-  .hero.private-dining .align-middle.menu-box { padding: 120px 20px 30px; }
-  #contact.promo-block .menu-box { padding: 80px 20px 40px; }
+  .hero.private-dining .align-middlepad-box { padding: 120px 20px 30px; }
+  #contact.promo-block pad-box { padding: 80px 20px 40px; }
   .hero.home, .slide, .home-wrapper { min-height: 320px; }
   .content { top: 50%; transform: translateY(-50%); }
   .logo { margin: 0px auto; width: 55%; }
@@ -400,7 +404,7 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
   .logo { margin: 0px auto; }
   .subpage-head .logo { width: 120px; margin: 5px auto 10px; }
   .menus { padding: 165px 0px 0px; }
-  .hero.private-dining .align-middle.menu-box { padding: 100px 20px 30px; }
+  .hero.private-dining .align-middlepad-box { padding: 100px 20px 30px; }
   #gallery::before, #gallery::after { font-size: 70px; }
   div#SignUp { width: 280px; }
   .press { padding: 130px 0px 0px; }

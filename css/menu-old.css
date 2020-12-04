@@ -177,7 +177,7 @@ hr {
 	min-height:680px;
     overflow:scroll;
 }
-.menu-box {
+pad-box {
     padding: 55px 50px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -264,13 +264,13 @@ hr {
     position: relative;
     overflow: hidden;
 }
-.promo-block .menu-box{
+.promo-block pad-box{
     position:relative;
     z-index:3;
     padding: 155px 50px;
 }
 
-.promo-block .menu-box + .bg-img:before {
+.promo-block pad-box + .bg-img:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -562,7 +562,7 @@ nav .nav-block.main-links ul li a:hover {
     transition: 0.25s ease-out;
 }
 
-nav .menu-box {
+nav pad-box {
     max-width: 950px;
     margin: 0 auto;
 }
@@ -1112,7 +1112,7 @@ footer.subpage h7 a{
     display: inline-block;
     float: left;
 }
-.hero.chef .menu-box {
+.hero.chef pad-box {
     padding: 30% 100px 55px 20px;
 }
 .hero.chef .bg-img {
@@ -1163,7 +1163,7 @@ footer.subpage h7 a{
     font-weight: 200;
     letter-spacing: 1px;
 }
-.hero.private-dining .align-middle.menu-box {
+.hero.private-dining .align-middlepad-box {
     padding: 125px 100px 0;
     width: 60%;
     box-sizing: border-box;
@@ -1275,7 +1275,7 @@ footer.subpage h7 a{
 #gallery {
     position: relative;
 }
-#contact.promo-block .menu-box {
+#contact.promo-block pad-box {
     padding: 200px 50px 115px;
 }
 
@@ -1659,7 +1659,7 @@ div#SignUp {
     .award-block {
         margin: 60px 0 0px 0;
     }
-    .hero.private-dining .align-middle.menu-box{
+    .hero.private-dining .align-middlepad-box{
         padding: 125px 80px 0;
     }
     nav .nav-block{
@@ -1680,7 +1680,7 @@ div#SignUp {
         margin: 20px auto 0px;
         width: 150px;
     }
-    nav .menu-box {
+    nav pad-box {
         padding: 20px;
     }
     nav .social {
@@ -1711,14 +1711,14 @@ div#SignUp {
 } 
 @media only screen and (max-width:1400px){
   
-    .hero.private-dining .align-middle.menu-box{
+    .hero.private-dining .align-middlepad-box{
         padding: 125px 60px 0;
     }
    
 }
 @media only screen and (max-width:1250px){
 	
-    .hero.private-dining .align-middle.menu-box{
+    .hero.private-dining .align-middlepad-box{
         padding: 125px 50px 0;
     }
     #bio .max-width {
@@ -1729,7 +1729,7 @@ div#SignUp {
     }
 }
 @media only screen and (max-width:1150px){
-    .hero.chef .menu-box {
+    .hero.chef pad-box {
         padding: 50% 50px 55px 20px;
     }
     h1 {
@@ -1742,7 +1742,7 @@ div#SignUp {
         font-size: 16px;
     }
    
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         width: 70%;
     }
 
@@ -1766,16 +1766,16 @@ div#SignUp {
     .home-footer .pad-left {
         padding: 0 0 0 30px;
     }
-    .menu-box {
+    pad-box {
         padding: 45px 40px;
     }
-    .promo-block .menu-box {
+    .promo-block pad-box {
         padding: 120px 40px;
     }
-    #contact.promo-block .menu-box {
+    #contact.promo-block pad-box {
         padding: 200px 40px 100px;
     }
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         padding: 105px 40px 0;
     }
     #bio .max-width {
@@ -1798,17 +1798,17 @@ div#SignUp {
     .home-footer .contact {
     	padding: 35px 30px;
     }
-    .menu-box {
+    pad-box {
         padding: 35px 30px;
     }
     
-    .promo-block .menu-box {
+    .promo-block pad-box {
         padding: 100px 30px;
     }
-    #contact.promo-block .menu-box {
+    #contact.promo-block pad-box {
         padding: 160px 30px 70px;
     }
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         width: 80%;
         padding: 120px 30px 0;
     }
@@ -1958,7 +1958,7 @@ div#SignUp {
         font-size: 16px;
         line-height: 24px;
     }
-    .hero.chef .align-middle.menu-box {
+    .hero.chef .align-middlepad-box {
         background: rgba(0, 0, 0, 0.7);
         -webkit-transform: translateY(0);
         -moz-transform: translateY(0);
@@ -2028,7 +2028,7 @@ div#SignUp {
     }
     
     
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         padding: 130px 30px 20px;
     }
     #gallery:before, 
@@ -2059,7 +2059,7 @@ div#SignUp {
         margin: 20px auto 0px;
         width: 150px;
     }
-    nav .menu-box {
+    nav pad-box {
         padding: 20px;
     }
    	.press-list{
@@ -2139,17 +2139,17 @@ div#SignUp {
     .home-footer .contact {
     	padding: 25px 20px;
     }
-    .menu-box,
-    .hero.chef .align-middle.menu-box{
+    pad-box,
+    .hero.chef .align-middlepad-box{
         padding: 25px 20px;
     }
-    #contact.promo-block .menu-box {
+    #contact.promo-block pad-box {
         padding: 100px 20px 50px;
     }
     #bio .max-width {
         margin: 10px auto;
     }
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         width: 100%;
         padding: 150px 20px 30px;
     }
@@ -2165,7 +2165,7 @@ div#SignUp {
     footer.subpage .col.third.pad-both{
     	margin:30px 0 40px;
     }
-    .promo-block .menu-box {
+    .promo-block pad-box {
         padding: 70px 20px;
     }
     .promo-block.sisters .col {
@@ -2304,10 +2304,10 @@ div#SignUp {
     .hero.private-dining {
         min-height: 780px;
     }
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         padding: 120px 20px 30px;
     }
-    #contact.promo-block .menu-box {
+    #contact.promo-block pad-box {
         padding: 80px 20px 40px;
     }
     
@@ -2359,7 +2359,7 @@ div#SignUp {
     .menus {
         padding: 165px 0 0 0;
     }
-    .hero.private-dining .align-middle.menu-box {
+    .hero.private-dining .align-middlepad-box {
         padding: 100px 20px 30px;
     }
     #gallery:before, 
