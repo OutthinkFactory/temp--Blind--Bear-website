@@ -1,140 +1,444 @@
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="touchevents svgasimg js-focus-visible" data-js-focus-visible=""></html>
 <html lang="en">
-  <head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-K8M6W2B');</script>
-  <!-- End Google Tag Manager -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Blind Bear</title>
-  </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8M6W2B"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-         <!-- End Google Tag Manager (noscript) -->
-         <div  class="boarder-container">
-            <img src="2x-WHITE-BOARDER.png" alt="">
-            
-            <div class="nav-container">
-
-                <nav>
-                <h1 id="logo">blind bear</h1>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./menu-2.html">Menu</a></li>
-                <!-- <li><a class="order" href="#soon">Coming Soon<br> Order Online</a></li>-->
+    <head>
+        <title>Blind Bear  | Memphis</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link type="text/css" href="/StyleSheets/ModuleStyleSheets.css" rel="StyleSheet">
+        <script type="text/javascript">var jslang='EN';</script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700,800|Oswald:300,400,500,700|Roboto+Slab:300,400,700" rel="stylesheet">
+        <link media="all" rel="stylesheet" href="/easy/icons/css/fontello-codes.css">
+        <link media="all" rel="stylesheet" href="/easy/icons/css/fontello-embedded.css">
+        <link media="all" rel="stylesheet" href="/easy/icons/css/fontello.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/lity.css">
+        <link rel="stylesheet" href="/css/all-styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/js/modernizr.min.js"></script>
+        <script src="/js/slick.min.js"></script>
+        <script src="/js/lity.min.js"></script>
+        <script src="/js/main.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--[if lt IE 8]>
+        <link media="all" rel="stylesheet" href="/easy/icons/css/fontello-ie7-codes.css">
+        <link media="all" rel="stylesheet" href="/easy/icons/css/fontello-ie7.css">
+        <![endif]-->
+        <!--[if lt IE 9]>  
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>  
+        <![endif]-->
+        <style>
+                    a.text-link {
+                        font-size: 10px;
+                    }
+                               header{
+                                   height:100px;
+                               }
+                    header,
+                    .flex-wrap {
+                        display: -webkit-box;
+                        display: -moz-box;
+                        display: -ms-flexbox;
+                        display: -webkit-flex;
+                        display: flex;
+                        flex-direction:row;
+                   
+                    }
+                    .flex-wrap{
+                        align-items:center;
+                    }
+                    ul.home-btns {
+                        
+                        margin: 30px 0px 0 30px;;
+                        padding: 0;
+                        list-style: none;
+                    }
+                    .home-btns li {
+                        margin: 0 0 12px;
+                    }
+                    
+                    .home-btns li a {
+                        width: 105px;
+                        text-align: center;
+                    }
+                    .home-btns .btn {
+                        background: rgb(0 0 0 / 60%);
+                    }
+                    .home-btns .btn:hover {
+                        background: #ceba95;
+                    }
+                    .home-btns{
+                        opacity: 1;
+                        visibility: visible;
+                        -webkit-transition: opacity 0.35s ease;
+                        -moz-transition: opacity 0.35s ease;
+                        -ms-transition: opacity 0.35s ease;
+                        transition: opacity 0.35s ease;
+                    }
+                    .menu-active .home-btns{
+                        opacity: 0;
+                        visibility: hidden;
+                        -webkit-transition: opacity 0.35s ease;
+                        -moz-transition: opacity 0.35s ease;
+                        -ms-transition: opacity 0.35s ease;
+                        transition: opacity 0.35s ease;
+                    }
+                            .home-btns li:last-of-type{
+                                display:none;
+                            }
+                            .home-btns a + h3{
+                                margin:0 0 0 30px;
+                            }
+                    @media only screen and (max-width:768px){
+                  ul.home-btns {
+                            display: -webkit-box;
+                            display: -moz-box;
+                            display: -ms-flexbox;
+                            display: -webkit-flex;
+                            display: flex;
+                            flex-direction:row;
+                            margin: 42px 0px 0 30px;
+                        }
+                        .home-btns li {
+                            margin: 0 10px 0px 0;
+                        }
+                        .home-btns .btn {
+                            width: auto;
+                        }
+                        .home-btns .btn + h3 {
+                            display: none;
+                        }
+                        .home-btns .btn {
+                            font-size: 12px;
+                            padding: 5px 20px;
+                        }
+                        .home-btns li:last-of-type {
+                            display: block;
+                        }
+                        
+                        .home-btns li a.text-link {
+                            font-size: 8px;
+                            width: auto;
+                            font-weight: 500;
+                            letter-spacing: 2.5px;
+                        }
+                        
+                        .home-btns h3 {
+                            margin: 7px 0 0 10px;
+                        }
+                    }
+                    @media only screen and (max-width:640px){
+                        ul.home-btns{
+                            margin: 15px 0 0 15px;
+                        }
+                        .home-btns .btn {
+                            font-size: 11px;
+                            padding: 5px 15px;
+                            width: 84px;
+                        }
+                        
+                        ul.home-btns{
+                            display:initial;
+                        }
+                        .home-btns li {
+                            margin: 0 0px 8px 0;
+                        }
+                        .home-btns .btn + h3 {
+                            display: block;
+                        }
+                        .home-btns li:last-of-type {
+                            display: none;
+                        }
+                    }
+                    @media only screen and (max-width:550px){
+                    }
+                </style>
+        <meta name="description" content="">
+        <style>
+            #carry-out figure {
+            margin: 0;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
         
-                </ul>
-                </nav>
+        #carry-out .pad {
+            padding: 5vw;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+        
+        #carry-out h4, #carry-out h1, #carry-out p {
+            color: white;
+        }
+        div#carry-out {overflow-y: scroll;}
+        #carry-out div, #carry-out figure {display: block;}
+                </style>
+        <script type="text/javascript" src="/CatalystScripts/Java_Box.js?vs=b5.1fe41e9e-phase1"></script>
+        <style type="text/css">
+        @font-face {
+          font-weight: 400;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+        
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+        }
+        
+        @font-face {
+          font-weight: 500;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+        
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+        }
+        
+        @font-face {
+          font-weight: 700;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+        
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+        }
+        
+        @font-face {
+          font-weight: 900;
+          font-style:  normal;
+          font-family: 'Circular-Loom';
+        
+          src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+        }</style></head>
+  
+  <body class="home-page">
+
+    
+    <div class="body-wrap">
+        <nav>
+          <!--<add logo> -->
+            <a class="logo" href="/">
+               
+                <img alt="blind bear" file-type="svg" src="resources\images\black-logo-bear.png" />
+                <img alt="blind bear" file-type="png" src="resources\images\black-logo-bear.png" />
+              
+            </a>
+            <div class="menu-box">
+                <div class="col half right">
+                    <div class="nav-block main-links">
+                        <script type="text/javascript" src="/CatalystScripts/Java_DynMenusSelectedCSS.js?vs=b8.33cb2ecf-phase1"></script><!-- Dynamic Menu Begin CSS Output -->
+                        <div id="cat_2376132_divs">
+                            <ul id="nav_2376132">
+                                <li><a href="/menus">Menus</a>  </li>
+                                <li><a href="/chef">The Chef</a></li>
+                                <li><a href="/crew"> The Crew</a></li>
+                                <li><a href="/press">Press</a></li>
+                                <li><a href="*" target="_blank">Gift Cards</a></li>
+                   
+                    </div>
+                    <div class="nav-block external-links" style="display:none;">
+                        <a href="#reservations" data-lity>Call Us<i class="demo-icon icon-link"></i></a>
+                        <a href="" target="_blank">Gift Cards <i class="demo-icon icon-link"></i></a>
+                        <a href="" target="_blank">Gift Card Balance <i class="demo-icon icon-link"></i></a>
+                    </div> 
+                    <div class="nav-block sister-links">
+                        <a class="col half pad-right" href="" target="_blank">
+                            <img alt="Members Club" src="/images/msm-logo.png" />
+                            <h5>Members Club</h5>
+                        </a>
+                        <a class="col half pad-left" href="" target="_blank">
+                            <img alt="Supper Club" src="/images/scsc-logo_new.png" />
+                            <h5>Supper Club</h5>
+                        </a>
+                        <span class="clearfix"></span>
+                    </div>
+                </div>
+                <div class="col half">
+                    <div class="nav-block">
+                        <h7><a class="location" href="https://www.google.com/maps/place/Blind+Bear/@35.1417265,-90.0543361,15z/data=!4m5!3m4!1s0x0:0x778cad39f5222021!8m2!3d35.1417265!4d-90.0543361" target="_blank">119 S Main St, <br />Memphis, TN 38103</a></h7>
+                        <h2><a class="tel" href="tel:9014178435">901.417.8435</a></h2>
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.facebook.com/blilndbear" target="_blank">
+                                    <i class="demo-icon icon-facebook"></i>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/blindbear901?lang=en" target="_blank">
+                                    <i class="demo-icon icon-twitter"></i>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/blindbear901/" target="_blank">
+                                    <i class="demo-icon icon-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <span class="clearfix"></span>
+                        </ul>
+                        
+                        
+                        <h2>OPEN All Week</h2>
+                        <h7>10am-10pm</h7>
+                        
+                       
+                    </div>
+                    <div class="nav-block newsletter">
+                        <h6 class="color-gold">Sign Up For Our Newsletter<br /> To Get The Latest News</h6>
+                        <a href="/signup" class="btn" target="_blank">Sign Up</a>
+                    </div>
+                </div>
+                <span class="clearfix"></span>
             </div>
-
-            <main>
-                <section class="banner">
-                    <div>
-                        <h1> THE BLIND BEAR</h1>
-                    </div>
-                <div class="hero">
-                    <img src="resources\images\hero-background.png" width="95%" alt="bartender"> 
-                </div>
-
-                </section>
+        </nav>
+        <header>
+        
+               
+            <ul class="home-btns">
+                <li class="flex-wrap">
+                    <a class="btn" href="*" data-lity>Reservations Coming Soon</a>
+                    <h3><a class="text-link" href="#safety" data-lity>Safety Precautions</a></h3>
+                </li>
+                <li><a class="btn" target="_blank" href="*">Takeout Coming Soon</a></li>
+                <li><a class="btn" target="_blank" href="*">Delivery Comming SOon</a></li>
+                <li><h3 style="*"><a class="text-link" href="#safety" data-lity="">Safety Precautions</a></h3></li>
+            </ul>
+            <section id="safety" class="lity-hide">
+                <p style="padding:5vw; max-width:650px; text-align:center; margin:0 auto; color:white;">
+                    Hello, friends! As we re-open our doors and welcome you back to Blind Bear, we are taking every possible precaution to ensure that we’re making the smartest decisions for you and for the community. For now, our seating will be at 50% capacity,  but spaced out in accordance to Health Department recommendations. We ask that guests wear masks upon arrival and keep your mask on unless drinking or eating. Per Health Department regulations we  can not only serve you alcohol, they do require a food purchase on every ticket. Please stay safe, healthy, and we look forward to seeing you back.  <br> Your Family, <br>Blind Bear
+            </section>
+            
+            
+            
+            <section id="reservations" class="lity-hide">
                 
-                <div class="know">
-                    <img src="resources\images\IN-THE-KNOW.png" width="80%" alt=" are you in the know">
-                    <p> 
-                           WE OFFER CONTEMPORARY CUISINE WITH AN ITALIAN FLARE
-                            INSPIRED BY THE ORIGINAL SPEAKEASIES IN NEW YORK RAN BY THE MOB 
-                    </p>
 
+                
+            </section> 
+            <div id="trigger" class="btn-wrapper">
+                <button class="menu-button">
+                   
+                  <span>Menu</span
+                    ::after
+                    ></button>
+            </div>
+        </header>
+        <div class="page-wrapper">
+            <div class="container">
+             
+                <div class="subpage-head">
+                    <a class="logo" href="/">
+                                                     <img alt="Blind Bear" file-type="svg" src="resources\images\cardboard-bg (1).jpg" />
+                        <img alt="Blind Bear" file-type="png" src="resources\images\cardboard-bg (1).jpg" />
+                                                </a>
+                                        </div>
+                
+                
+
+
+
+    <div class="home-wrapper">
+        <section class="content">
+            <div class="logo">
+                <img alt="Blind Bear1" file-type="svg" src="resources\images\black logo.jpg "  />
+                <img alt="Blind Bear2" file-type="png" src="resources\images\black logo.png" />
+            </div>
+        </section>
+        <section class="mobile-contact align-bottom">
+            <a href="https://www.google.com/maps/place/Blind+Bear/@35.1435131,-90.0635558,13.92z/data=!4m5!3m4!1s0x0:0x778cad39f5222021!8m2!3d35.1417265!4d-90.0543361" class="location" target="_blank">
+                <i class="demo-icon icon-location"></i>
+            </a>
+            <a href="tel:9014178435" class="phone">
+                <i class="demo-icon icon-phone"></i>
+            </a>
+        </section>
+        <section class="hero home">
+            <div class="slide">
+                <div class="bg-img" style="background-image:url(/resources\images\steak.jpg);"></div>
+           </div>
+           <div class="slide">
+                <div class="bg-img" style="background-image:url(resources\images\black-logo-bear.png);"></div>
+           </div> 
+            <div class="slide">
+                   <div class="bg-img" style="background-image:url(/resources\images\IN-THE-KNOW.png);"></div>
+                </div> 
+            <div class="slide">
+                <div class="bg-img" style="background-image:url(resources\images\blacklogo.png);"></div>
+            </div>
+        </section>
+        <footer class="home-footer">
+            <div class="col two-thirds hours">
+                <div class="col pad-right">
+                    <h2>OPEN All Week</h2>
+                  
                 </div>
-
-                <div class="open">
-                    <h3> -NOW OPEN FOR BREAKFAST- </h3>
-                    <p><strong>MONDAY - SUNDAY <br>
-                        STARTING AT 7AM</strong></p>
+                <div class="col pad-left">
+                    <h2>10am-10pm </h2>
+                   
                 </div>
-                <section class="features">
-                    <div class="cards">
-                     <h2>COVID HOUSE RULES</h2>
-                     <div class="card">
-                       
-                       <h4>Rule 1</h4>
-                       <p> A Mask Must be Worn at All Times Unless Sitting in Seat</p>
-                       
-                       <H4>Rule 2</H4>
-                       <p> You Can Not Spend More on Alcohol than Food  </p>
-       
-                       <h4>Rule 3</h4>
-                     <p>
-                       Bar area is closed
-                     </p>
-       
-                       
-                     </div>
-                   </div>
-                 </section>
-               </div>
-                <section >
-                    <div class="food-container">
-                        <img class="food-img" src="resources\images\steak.jpg"  width="40%" alt="">
-                    </div>
-                    <div class="food">
-                        <h3>COCKTAIL & FOOD MENUS</h3>
-                        <p class="tagline-head">HAND CRAFTED COCKTAILS & DAMN GOOD EATS</p>
-                        <!--incert line img-->
-                        <p class="tagline">We mix our spirits with the finest and freshest fruits, juices, syrups and infusions in cocktails inspired by original recipes.</p>
-                        <button class="menu-btn">
-                            <a href="./menu-2.html">SEE OUR MENU'S</a>
-                        </button>
-                    </div>
-                </section>
-                <section>
-                    <div class="contact-container">
-                        <div class="contact">
-                            <h3>FIND US</h3>
-                            <p>
-                                119 S MAIN ST STE 100<br>
-                                MEMPHIS, TN 38103<br>
-                                (901) 417-8435
-                            </p>
-                        </div>
-                        <div class=" contact">
-                            <h3>COME SEE US</h3>
-                            <p>
-                                MONDAY-SUNDAY<br>7AM-10PM
-                            </p>
-                        </div>
+                <span class="clearfix"></span>
+            </div>
+            <div class="col third contact">
+                <h2><a class="tel" href="tel:9014178435">901.417.8435</a></h2>
+                <h7><a class="location" href="https://www.google.com/maps/place/Blind+Bear/@35.1417265,-90.0543361,15z/data=!4m5!3m4!1s0x0:0x778cad39f5222021!8m2!3d35.1417265!4d-90.0543361" target="_blank">119 s Main St, <br />Memphis ,TN 38103</a></h7>
+            </div>
+            <span class="clearfix"></span>
+        </footer>
+      
+    </div>
+    <script>
+        $(document).ready(function(){
+            var winHeight = $(window).height();
+            $('.hero, .slide').height(winHeight);
+        });
+        $(window).resize(function(){
+            var winHeight = $(window).height();
+            $('.hero, .slide').height(winHeight);
+        }); 
+        
 
-                    </div>
-                </section>
-                <footer>
-                    <h1>BLIND BEAR 2020</h1>
-                    <ul>
-                     <!-- <li>
-                        <a href="www.https://www.facebook.com/blilndbear"><img src="./resources/images/facebook-icon.png" alt="" /></a> 
-                      </li>-->
-                      <li>
-                        <a href="https://twitter.com/blindbear901"><img src="./resources/images/twitter-logo.png" alt="" /></a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com/blindbear901"><img src="./resources/images/instagram-logo.png" alt=""  /></a>
-                      </li>
-                    </ul> -
-                  </footer>
-            </main>
+    </script>
+    
+    
+    
+
+
+
+                <footer class="subpage">
+<div class="menu-box">
+    <div class="col third pad-right">
+        <a class="logo" href="/">
+            <img alt="Blind Bear " file-type="svg" src="resources\images\food.jpg"/>
+            <img alt="Blind Bear " file-type="png" src="resources\images\fun.jpg"/>
+        </a>
+    </div>
+    <div class="col third pad-both text-center">
+        
+        <div class="hours">
+          <h2>Open All Week</h2>
+            <h7>10am-10pm</h7>
         </div>
-    </body>
+       
+    </div>
+    <div class="col third pad-left text-right">
+        <h2><a class="tel" href="tel:9014178435">901.417.8435</a></h2>
+        <h7><a class="location" href="https://www.google.com/maps/place/Blind+Bear/@35.1417265,-90.0543361,15z/data=!4m5!3m4!1s0x0:0x778cad39f5222021!8m2!3d35.1417265!4d-90.0543361" target="_blank">119 s Main st, <br/>Memphis TN 38103</a></h7>
+        <hr />
+        <h6 class="color-gold">Sign Up For Our Newsletter<br /> To Get The Latest News</h6>
+        <a href="/signup" class="btn" target="_blank">Sign Up</a>
+    </div>
+    <span class="clearfix"></span>
+</div>
+</footer> 
+            </div>
+        </div>
+    </div>
+    
+    <section id="reservations" class="lity-hide">
+        
+    </section>
 
-
-  </html>
+  </body>
+</html>
+    
+    
