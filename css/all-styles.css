@@ -55,7 +55,7 @@ header .btn-wrapper:hover { background: rgb(255, 255, 255); transition: all 0.35
 .menu-active .menu-button::after { transform: rotate3d(0, 0, 1, -45deg); }
 .menu-active header .btn-wrapper { background: rgba(255, 255, 255, 0); }
 .menu-active .menu-button::before, .menu-active .menu-button::after, .menu-active .menu-button span { background: white; }
-nav { position: absolute; top: 0px; left: 0px; right: 0px; background: url("/easy/images/menu-bg.png") 0px 0px / 100% no-repeat transparent; z-index: 0; transition: all 0.35s linear 0s; height: 100vh; overflow-y: scroll; }
+nav { position: absolute; top: 0px; left: 0px; right: 0px; background: url("resources\images\Dinner-1x.jpg") 0px 0px / 100% no-repeat transparent; z-index: 0; transition: all 0.35s linear 0s; height: 100vh; overflow-y: scroll; }
 .menu-active nav { z-index: 0; transition: all 0.35s linear 0s; }
 nav .col.half.right { float: right; text-align: left; border-left: 1px solid rgb(80, 80, 80); }
 nav .col.half { text-align: right; }
@@ -145,7 +145,7 @@ footer.subpage { background: black; }
 .menus .bg-img { transform: scale(1) translateZ(0px); transition: transform 0.35s linear 0s; }
 .menus a:hover .bg-img { transform: scale(1.08) translateZ(0px); transition: transform 7s linear 0s; }
 .hero.chef::before { display: none; }
-.hero.chef { background-image: url("/easy/images/erik-1600.png"); background-repeat: no-repeat; background-size: cover; overflow: hidden; background-position: 35% 0px; color: white; }
+.hero.chef { background-image: url("resources\images\cardboard-bg (1).jpg"); background-repeat: no-repeat; background-size: cover; overflow: hidden; background-position: 35% 0px; color: white; }
 .award-block { margin: 100px 0px 0px; }
 .award-block span { display: inline-block; }
 .award-block .icon-ribbon-2, .award-block .icon-ribbon { font-size: 60px; display: inline-block; float: left; margin: -5px 3px 0px 0px; }
@@ -156,7 +156,7 @@ footer.subpage { background: black; }
 .hero.chef .overlay { width: 50%; right: 0px; left: 50%; }
 .hero.chef .chef-img { display: none; }
 .hero.chef h3 { max-width: 710px; }
-#bio { background-image: url("/easy/images/marble.png"); background-repeat: no-repeat; background-size: cover; background-color: white; text-align: justify; }
+#bio { background-image: url("resources\images\frame.png"); background-repeat: no-repeat; background-size: cover; background-color: white; text-align: justify; }
 #bio .max-width { margin: 60px auto; }
 .promo-block.sisters img { width: 200px; margin: 0px auto 20px; }
 .promo-block.sisters .col.pad-both h3 { margin: 90px 20px 0px; color: rgb(205, 188, 157); font-size: 44px; font-weight: 200; text-align: center; }
@@ -203,7 +203,7 @@ div#SignUp { background: white; border-radius: 3px; padding: 20px 15px; width: 3
 #SignUp h2 { margin: 0px 0px 20px; }
 .reservations.home { display: none; }
 .home-page .reservations.home { display: block; }
-.press { position: relative; background-image: url("/easy/images/marble.png"); background-repeat: no-repeat; background-size: cover; overflow: hidden; background-position: 50% 50%; padding: 180px 0px 0px; }
+.press { position: relative; background-image: url("resources\images\brunch-2x.jpg"); background-repeat: no-repeat; background-size: cover; overflow: hidden; background-position: 50% 50%; padding: 180px 0px 0px; }
 .press-list { margin: 0px -50px; padding: 0px; list-style: none; text-align: center; }
 .press-list li { width: 50%; display: inline-block; float: left; padding: 0px 50px; box-sizing: border-box; position: relative; border: none; text-align: left; }
 .press-list li a { overflow-wrap: break-word; display: block; padding: 20px 0px 20px 80px; position: relative; border: none; }
